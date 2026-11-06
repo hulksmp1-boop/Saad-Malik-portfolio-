@@ -1,640 +1,391 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saad Malik — Web Developer</title>
+<meta name="description" content="Saad Malik builds fast, animated, high-converting websites for startups and creators.">
+<meta name="theme-color" content="#0C0809">
+<meta property="og:title" content="Saad Malik — Web Developer">
+<meta property="og:description" content="Fast, animated, high-converting websites that make your brand impossible to forget.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--ink:#0C0809;--card:#150E10;--line:#2c1d1f;--bone:#F6F1EA;--red:#E5252A;--amber:#FFB020;--muted:#B3A7A1}
+*{box-sizing:border-box;margin:0;padding:0}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:var(--ink);color:var(--bone);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:400;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+em{font-style:normal}
+.h{font-weight:800;letter-spacing:-.03em;line-height:1}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.red{color:var(--red)}
+.muted{color:var(--muted)}
+.eyebrow{font-size:13px;color:var(--muted);letter-spacing:.04em;margin-bottom:10px}
 
-<html class="dark" lang="en"><head><meta charset="utf-8"/><meta name="description" content="Saad Malik is an independent web developer in Pakistan offering custom websites, frontend development, business websites, e-commerce websites and responsive redesigns."/>
-<meta name="theme-color" content="#131412"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Saad Malik — Independent Web Developer"/>
-<meta property="og:description" content="Thoughtful, responsive websites built around your business goals."/>
-<meta name="robots" content="index, follow"/><meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ffb4ab", "on-secondary-fixed-variant": "#474741", "tertiary-fixed-dim": "#c8c7bb", "secondary-fixed-dim": "#c8c7be", "tertiary-container": "#e5e3d6", "surface-container-lowest": "#0d0e0d", "on-secondary-fixed": "#1b1c17", "on-surface-variant": "#c5c9b1", "surface-container-low": "#1b1c1a", "secondary-fixed": "#e4e3da", "primary-container": "#c8f259", "on-surface": "#e4e2de", "primary-fixed": "#c8f259", "surface-bright": "#393937", "on-primary-fixed-variant": "#3a4d00", "outline-variant": "#444936", "on-primary": "#273500", "on-background": "#e4e2de", "on-primary-fixed": "#161f00", "primary-fixed-dim": "#add53f", "on-error-container": "#ffdad6", "primary": "#ffffff", "outline": "#8e937d", "on-tertiary-fixed": "#1c1c15", "tertiary-fixed": "#e5e3d6", "secondary": "#c8c7be", "inverse-on-surface": "#30312e", "surface-tint": "#add53f", "on-tertiary": "#313129", "surface-container": "#1f201e", "on-secondary-container": "#bab9b0", "on-secondary": "#30312b", "surface-container-high": "#292a28", "inverse-primary": "#4f6700", "surface-container-highest": "#343533", "on-primary-container": "#546d00", "on-tertiary-container": "#65655b", "error-container": "#93000a", "surface-dim": "#131412", "inverse-surface": "#e4e2de", "tertiary": "#ffffff", "background": "#131412", "surface": "#131412", "on-tertiary-fixed-variant": "#47473e", "surface-variant": "#343533", "on-error": "#690005", "secondary-container": "#494943" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "2rem", "space-xl": "6rem", "space-md": "1.5rem", "space-sm": "0.75rem", "space-lg": "3rem", "margin-sm": "1.25rem", "margin": "3.5rem", "gutter-sm": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-md": ["Work Sans"], "display-lg-mobile": ["Bodoni Moda"], "headline-lg-mobile": ["Bodoni Moda"], "label-code": ["JetBrains Mono"], "body-md": ["Work Sans"], "display-xl": ["Bodoni Moda"], "body-lg": ["Work Sans"], "headline-lg": ["Bodoni Moda"], "label-caps": ["JetBrains Mono"], "body-sm": ["Work Sans"], "display-xl-mobile": ["Bodoni Moda"], "display-lg": ["Bodoni Moda"] }, "fontSize": { "headline-md": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display-lg-mobile": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-lg-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "display-xl": ["112px", { "lineHeight": "104px", "letterSpacing": "-0.04em", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["52px", { "lineHeight": "58px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "label-caps": ["10px", { "lineHeight": "14px", "letterSpacing": "0.14em", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-xl-mobile": ["56px", { "lineHeight": "58px", "letterSpacing": "-0.03em", "fontWeight": "400" }], "display-lg": ["80px", { "lineHeight": "84px", "letterSpacing": "-0.03em", "fontWeight": "400" }] } } } };</script><style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  
-<style id="portfolio-responsive-overrides">
-  html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
-  body { min-height: 100vh; min-height: 100dvh; }
-  main { width: 100%; }
-  main > div { width: 100%; max-width: 100%; margin-inline: auto; }
-  img { max-width: 100%; }
-  input, select, textarea, button { font: inherit; }
-  a:focus-visible, button:focus-visible, input:focus-visible,
-  select:focus-visible, textarea:focus-visible {
-    outline: 2px solid #c8f259;
-    outline-offset: 3px;
-  }
-  @media (min-width: 768px) {
-    header .h-16 { padding-inline: clamp(2rem, 5vw, 5rem); }
-    main { padding-inline: clamp(2rem, 7vw, 7rem); padding-bottom: 4rem; }
-    main > div { max-width: 1180px; }
-    main section { margin-inline: 0; }
-    main section:first-child { padding-top: 5rem; padding-bottom: 6rem; }
-    main section:first-child h1 { font-size: clamp(5rem, 11vw, 9rem); line-height: .88; }
-    main section:first-child > div.relative { height: clamp(18rem, 36vw, 30rem); }
-    main section:first-child > div.flex.flex-col.gap-3 { flex-direction: row; }
-    main section:first-child > div.flex.flex-col.gap-3 > a { flex: 1; }
-    #about, #skills, #contact { padding: clamp(2.5rem, 5vw, 5rem); }
-    #about h2, #skills h2 { max-width: 14ch; font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.05; }
-    #about > div.space-y-4 { max-width: 70ch; }
-    #services-ledger, #process { padding-block: clamp(3rem, 6vw, 6rem); }
-    #services-ledger > div.flex.flex-col > div.py-5 { padding-block: 1.75rem; }
-    #skills .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    #process > div.flex.flex-col.space-y-6 { max-width: 760px; }
-    #contact > div.bg-surface-container { max-width: 760px; }
-    nav.fixed.bottom-0 { display: none; }
-    main { padding-bottom: 4rem; }
-  }
-  @media (max-width: 767px) {
-    header .h-16 { padding-inline: 1rem; }
-    main { padding-inline: 1rem; }
-    main section { scroll-margin-top: 5rem; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    *, *::before, *::after {
-      animation-duration: .01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: .01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
+#pre{position:fixed;inset:0;background:var(--red);z-index:300;display:flex;align-items:flex-end;justify-content:space-between;padding:24px;color:var(--ink)}
+#pre .cnt{font-size:clamp(72px,24vw,220px)}
+#pre .tag{font-size:14px;font-weight:500;padding-bottom:10px}
+#bar{position:fixed;top:0;left:0;right:0;height:3px;background:var(--red);transform-origin:left;transform:scaleX(0);z-index:120}
+
+.cur{display:none}
+.cursor-on,.cursor-on a,.cursor-on button{cursor:none}
+.cursor-on .cur{display:block;position:fixed;top:0;left:0;pointer-events:none;z-index:250}
+#dot{width:8px;height:8px;margin:-4px 0 0 -4px;border-radius:50%;background:var(--red)}
+#ring{width:36px;height:36px;margin:-18px 0 0 -18px;border:1.5px solid var(--bone);border-radius:50%;transition:width .25s,height .25s,margin .25s,background .25s,border-color .25s}
+#ring.big{width:68px;height:68px;margin:-34px 0 0 -34px;border-color:var(--red);background:rgba(229,37,42,.14)}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:110;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:rgba(12,8,9,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.04)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:16px}
+.logo i{width:30px;height:30px;border-radius:9px;background:var(--red);display:flex;align-items:center;justify-content:center;font-style:normal;color:#fff;font-size:15px}
+.links{display:none;gap:26px;font-size:14px;color:var(--muted)}
+.links a:hover{color:var(--bone)}
+@media(min-width:760px){.links{display:flex}}
+.navcta{border:1px solid #5a3a3d;border-radius:99px;padding:8px 18px;font-size:13px;font-weight:500}
+
+.hero{min-height:100svh;position:relative;display:flex;align-items:center;padding:110px 0 70px;overflow:hidden;--mx:70%;--my:30%}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle 340px at var(--mx) var(--my),rgba(229,37,42,.2),transparent 70%)}
+.blob{position:absolute;border-radius:50%;filter:blur(30px);animation:float 16s ease-in-out infinite}
+.b1{width:360px;height:360px;right:-130px;top:8%;background:var(--red);opacity:.2}
+.b2{width:220px;height:220px;left:-90px;bottom:6%;background:var(--amber);opacity:.09;animation-delay:-6s}
+@keyframes float{50%{transform:translate(-30px,40px) scale(1.1)}}
+.hero .wrap{position:relative}
+.pillt{display:inline-flex;align-items:center;gap:8px;font-size:13px;border:1px solid #4a2a2d;border-radius:99px;padding:7px 14px;background:#150E10;color:#E8DDD4}
+.dotg{width:8px;height:8px;border-radius:50%;background:var(--red);animation:pulse 1.8s infinite;flex:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(229,37,42,.6)}100%{box-shadow:0 0 0 12px rgba(229,37,42,0)}}
+h1{font-size:clamp(44px,12.5vw,116px);margin-top:20px}
+.ln{display:block;overflow:hidden;padding-bottom:.08em}
+.ln>span{display:block}
+.sub{font-size:clamp(15px,2.6vw,19px);color:#B3A7A1;max-width:520px;margin-top:20px}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 26px;border-radius:99px;font-weight:800;font-size:15px}
+.btn.red{background:var(--red);color:#fff}
+.btn.ghost{border:1px solid #5a3a3d}
+.mail{font-size:13px;color:var(--muted);margin-top:16px}
+
+.mq{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0;font-weight:800;font-size:clamp(16px,4vw,22px)}
+.mq-track{display:inline-block;will-change:transform}
+.mq-track span{display:inline-block;padding-right:.9em}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:40px 0 20px}
+.stat+.stat{border-left:1px solid var(--line)}
+.stat b{display:block;font-size:clamp(30px,8vw,56px);font-weight:800;letter-spacing:-.03em;line-height:1.05}
+.stat b i{font-style:normal;color:var(--red)}
+.stat small{font-size:13px;color:var(--muted)}
+.promise{margin:18px 0 0;border:1px solid #4a2a2d;border-radius:16px;padding:16px 18px;background:var(--card);font-size:14px;color:#E8DDD4}
+.promise span{color:var(--amber)}
+
+section{padding:80px 0 20px}
+h2{font-size:clamp(32px,8vw,64px)}
+.lead{color:var(--muted);margin-top:12px;max-width:520px;font-size:15px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 22px}
+.chip{border:1px solid #3a2a2c;border-radius:99px;padding:8px 16px;font-size:13px;font-weight:500;transition:background .25s,color .25s,border-color .25s}
+.chip.on{background:var(--red);border-color:var(--red);color:#fff}
+.list{border-bottom:1px solid var(--line)}
+.row{display:grid;grid-template-columns:44px 1fr auto;align-items:center;column-gap:12px;padding:22px 14px;border-top:1px solid var(--line);transition:background .3s,padding .3s}
+.row .num{color:var(--red);font-weight:800;font-size:14px;grid-row:1/3}
+.row .rt{font-size:clamp(20px,5vw,34px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.row .rtag{grid-column:2;color:var(--muted);font-size:13px}
+.row .arr{grid-row:1/3;grid-column:3;font-size:24px}
+.row.hide{display:none}
+@media(hover:hover){.row:hover{background:var(--red);padding-left:26px}.row:hover .num,.row:hover .rtag{color:#FFD9D6}}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+
+#peek{position:fixed;top:0;left:0;width:240px;height:160px;border-radius:14px;pointer-events:none;z-index:90;opacity:0;overflow:hidden;border:1px solid rgba(255,255,255,.18);display:none}
+.cursor-on #peek{display:block}
+.pk-bar{display:flex;gap:5px;padding:10px 12px}
+.pk-bar i{width:7px;height:7px;border-radius:50%;background:rgba(0,0,0,.35)}
+.pk-body{padding:0 12px}
+.pk-body b{display:block;height:10px;border-radius:5px;background:rgba(0,0,0,.22);margin-bottom:8px}
+.pk-body b:nth-child(1){width:70%;height:16px}
+.pk-body b:nth-child(2){width:90%}
+.pk-body b:nth-child(3){width:55%}
+#pkt{position:absolute;left:12px;bottom:10px;font-weight:800;font-size:14px}
+
+.stack{overflow:hidden;white-space:nowrap;padding:26px 0;margin-top:80px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stack div{display:inline-block;animation:mq2 26s linear infinite;font-size:clamp(34px,9vw,84px);font-weight:800;color:transparent;-webkit-text-stroke:1px #6b5558}
+.stack span{padding-right:.4em}
+@keyframes mq2{to{transform:translateX(-50%)}}
+
+.cards{display:grid;gap:12px;grid-template-columns:1fr;margin-top:28px}
+@media(min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;will-change:transform}
+.card .n{color:var(--red);font-weight:800;font-size:14px}
+.card h3{font-size:24px;margin:10px 0 8px;letter-spacing:-.02em}
+.card p{font-size:14px;color:var(--muted)}
+
+.contact{background:var(--red);color:#fff;padding:90px 0 150px;text-align:center;margin-top:90px}
+.contact h2{font-size:clamp(38px,11vw,100px)}
+.contact p{margin-top:14px;color:#FFD9D6}
+.say{width:118px;height:118px;border-radius:50%;background:var(--bone);color:var(--ink);display:flex;align-items:center;justify-content:center;font-weight:800;margin:32px auto 0}
+.cbtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.cbtns .btn{background:rgba(0,0,0,.18);color:#fff}
+footer{padding:24px 20px 110px;text-align:center;font-size:13px;color:var(--muted);background:var(--ink)}
+
+.pill{position:fixed;left:50%;bottom:14px;transform:translate(-50%,130px);width:min(92vw,420px);background:var(--card);border:1px solid #5a3a3d;border-radius:99px;padding:8px 8px 8px 18px;display:flex;justify-content:space-between;align-items:center;z-index:100;transition:transform .55s cubic-bezier(.2,.9,.2,1)}
+.pill.show,html:not(.js) .pill{transform:translate(-50%,0)}
+.pill span{display:flex;align-items:center;gap:9px;font-size:13px}
+.pill a{background:var(--red);color:#fff;font-weight:800;font-size:13px;padding:10px 20px;border-radius:99px}
+.toast{position:fixed;left:50%;top:76px;transform:translate(-50%,-20px);background:var(--bone);color:var(--ink);font-weight:800;font-size:13px;padding:10px 18px;border-radius:99px;opacity:0;pointer-events:none;z-index:130;transition:opacity .3s,transform .3s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
+</head>
+<body>
 
-<title>Saad Malik — Independent Web Developer</title>
-<style id="saad-motion-system">
-  /* Premium motion layer — keeps the existing editorial design intact */
-  :root { --motion-ease: cubic-bezier(.22,.8,.22,1); }
-  html { scroll-behavior: smooth; }
-  @keyframes hero-rise {
-    from { opacity: 0; transform: translate3d(0, 24px, 0); filter: blur(7px); }
-    to   { opacity: 1; transform: translate3d(0, 0, 0); filter: blur(0); }
-  }
-  @keyframes hero-image-in {
-    from { opacity: 0; transform: scale(1.045); }
-    to   { opacity: 1; transform: scale(1); }
-  }
-  @keyframes status-glow {
-    0%,100% { box-shadow: 0 0 0 0 rgba(200,242,89,0); }
-    50% { box-shadow: 0 0 14px 2px rgba(200,242,89,.18); }
-  }
-  #home > div:first-child { animation: hero-rise .75s var(--motion-ease) both; }
-  #home > div:nth-child(2) { animation: hero-rise .8s .08s var(--motion-ease) both; }
-  #home h1 { animation: hero-rise 1s .16s var(--motion-ease) both; }
-  #home > div.relative { animation: hero-image-in 1.1s .3s var(--motion-ease) both; }
-  #home > div.flex.flex-col.gap-3 { animation: hero-rise .8s .42s var(--motion-ease) both; }
-  #home .animate-pulse { animation: pulse 2s infinite, status-glow 3.2s ease-in-out infinite; }
+<div id="pre"><div class="cnt h" id="cnt">0</div><div class="tag">Saad Malik / Web Developer</div></div>
+<div id="bar"></div>
+<div class="cur" id="dot"></div><div class="cur" id="ring"></div>
+<div id="peek"><div class="pk-bar"><i></i><i></i><i></i></div><div class="pk-body"><b></b><b></b><b></b></div><span id="pkt"></span></div>
+<div class="toast" id="toast">Email copied</div>
 
-  .motion-reveal {
-    opacity: 0;
-    transform: translate3d(0, 28px, 0);
-    transition: opacity .75s var(--motion-ease), transform .75s var(--motion-ease);
-    will-change: opacity, transform;
-  }
-  .motion-reveal.is-visible {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-  .motion-reveal[data-motion="left"] { transform: translate3d(-24px, 0, 0); }
-  .motion-reveal[data-motion="left"].is-visible { transform: translate3d(0, 0, 0); }
-  .motion-reveal[data-motion="scale"] { transform: scale(.975); }
-  .motion-reveal[data-motion="scale"].is-visible { transform: scale(1); }
+<header class="nav">
+  <a href="#home" class="logo"><i>S</i>Saad</a>
+  <nav class="links"><a href="#home">Home</a><a href="#work">Work</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+  <a href="#contact" class="navcta" data-mag>Hire me</a>
+</header>
 
-  .motion-stagger > * {
-    opacity: 0;
-    transform: translate3d(0, 18px, 0);
-    transition: opacity .65s var(--motion-ease), transform .65s var(--motion-ease);
-  }
-  .motion-stagger.is-visible > * { opacity: 1; transform: translate3d(0,0,0); }
-  .motion-stagger.is-visible > *:nth-child(1) { transition-delay: .04s; }
-  .motion-stagger.is-visible > *:nth-child(2) { transition-delay: .10s; }
-  .motion-stagger.is-visible > *:nth-child(3) { transition-delay: .16s; }
-  .motion-stagger.is-visible > *:nth-child(4) { transition-delay: .22s; }
-  .motion-stagger.is-visible > *:nth-child(5) { transition-delay: .28s; }
-  .motion-stagger.is-visible > *:nth-child(6) { transition-delay: .34s; }
-  .motion-stagger.is-visible > *:nth-child(7) { transition-delay: .40s; }
+<main id="home">
+  <section class="hero" id="heroSec" style="padding-top:110px">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="wrap">
+      <span class="pillt"><span class="dotg"></span>Web developer · Open for projects</span>
+      <h1 class="h">
+        <span class="ln"><span>Websites</span></span>
+        <span class="ln"><span>people <em class="red">can't</em></span></span>
+        <span class="ln"><span>look away</span></span>
+        <span class="ln"><span>from.</span></span>
+      </h1>
+      <p class="sub">Fast, animated, high-converting websites for startups and creators who want to stand out.</p>
+      <div class="cta">
+        <a href="#work" class="btn red" data-mag>View my work ↓</a>
+        <a href="mailto:saadiimalik732@gmail.com" class="btn ghost" data-mag>Say hello</a>
+      </div>
+      <p class="mail">saadiimalik732@gmail.com · I reply within 24 hours</p>
+    </div>
+  </section>
 
-  #services-ledger .motion-card {
-    transition: background-color .3s ease, padding-left .35s var(--motion-ease), transform .35s var(--motion-ease);
-  }
-  #services-ledger .motion-card:hover {
-    padding-left: 1rem;
-    transform: translateX(3px);
-  }
-  #skills .motion-card {
-    transition: transform .35s var(--motion-ease), background-color .3s ease, border-color .3s ease;
-    border: 1px solid transparent;
-  }
-  #skills .motion-card:hover {
-    transform: translateY(-5px);
-    background-color: #292a28;
-    border-color: rgba(200,242,89,.28);
-  }
-  #contact a, #contact button, header a {
-    transition: color .25s ease, background-color .25s ease, transform .25s var(--motion-ease), box-shadow .25s ease;
-  }
-  #contact a:hover, #contact button:hover { transform: translateY(-2px); }
-  #contact button:active { transform: translateY(0) scale(.985); }
-  #process .motion-step > div:first-child {
-    transition: transform .35s var(--motion-ease), background-color .35s ease;
-  }
-  #process .motion-step:hover > div:first-child { transform: scale(1.1) rotate(-4deg); }
+  <div class="mq"><div class="mq-track" id="mq">
+    <span>Design ✦</span><span>Develop ✦</span><span>Animate ✦</span><span>Launch ✦</span><span>Design ✦</span><span>Develop ✦</span><span>Animate ✦</span><span>Launch ✦</span>
+    <span>Design ✦</span><span>Develop ✦</span><span>Animate ✦</span><span>Launch ✦</span><span>Design ✦</span><span>Develop ✦</span><span>Animate ✦</span><span>Launch ✦</span>
+  </div></div>
 
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      animation-duration: .01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: .01ms !important;
-      scroll-behavior: auto !important;
-    }
-    .motion-reveal, .motion-stagger > * {
-      opacity: 1 !important;
-      transform: none !important;
-    }
-  }
-</style>
+  <div class="wrap">
+    <div class="stats" data-r>
+      <div class="stat"><b><span data-count="24">24</span><i>h</i></b><small>Reply time</small></div>
+      <div class="stat"><b><span data-count="30">30</span><i>d</i></b><small>Free fixes</small></div>
+      <div class="stat"><b><span data-count="100">100</span><i>%</i></b><small>Mobile-ready</small></div>
+    </div>
+    <div class="promise" data-r><span>Free fixes for 30 days</span> after launch. I stay with you after the project ships.</div>
+  </div>
 
-</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-16 px-gutter-sm flex items-center justify-between max-w-7xl mx-auto"><div class="flex flex-col justify-center gap-0.5"><div class="flex items-center gap-2"><span class="font-label-caps text-label-caps tracking-widest text-primary font-bold uppercase">SAAD MALIK</span><span class="font-label-code text-label-code text-outline">[DEV]</span></div><div class="flex items-center gap-1.5"><span class="inline-block w-1.5 h-1.5 bg-primary-container shadow-[0_0_8px_#c8f259]"></span><span class="font-label-caps text-label-caps uppercase text-primary-container font-medium">Available for Work</span></div></div><div class="flex items-center gap-space-sm">
-<div class="hidden md:flex items-center gap-7 ml-auto mr-8 font-label-caps text-label-caps uppercase tracking-wider text-secondary">
-  <a class="hover:text-primary-container transition-colors" href="#home">Home</a>
-  <a class="hover:text-primary-container transition-colors" href="#about">About</a>
-  <a class="hover:text-primary-container transition-colors" href="#services-ledger">Services</a>
-  <a class="hover:text-primary-container transition-colors" href="#skills">Skills</a>
-  <a class="hover:text-primary-container transition-colors" href="#contact">Contact</a>
-</div>
-<a class="hidden sm:flex h-9 px-space-sm items-center justify-center bg-surface-container-high text-on-surface font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary transition-colors" data-path="contact" href="#contact"><span class="mr-1">Let's Talk</span><span class="text-primary-container font-label-code">[-&gt;]</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-24 px-gutter-sm"><div class="flex flex-col w-full">
-<!-- SECTION 1: HERO -->
-<section class="flex flex-col pt-4 pb-12 scroll-mt-24" id="home">
-<!-- Meta Ribbon & Status Pill -->
-<div class="flex flex-wrap items-center justify-between gap-2 mb-6">
-<div class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-high rounded-full">
-<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse shadow-[0_0_6px_#c8f259]"></span>
-<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface">Available for Freelance</span>
-</div>
-<div class="flex items-center gap-1.5 font-label-code text-label-code text-outline">
-<span class="material-symbols-outlined text-[14px] text-primary-container">location_on</span>
-<span>PK [GMT+5]</span>
-</div>
-</div>
-<!-- Identity Prefix -->
-<div class="flex items-center gap-2 mb-3">
-<span class="font-label-code text-label-code text-primary-container">[00]</span>
-<p class="font-label-caps text-label-caps tracking-widest text-outline uppercase">Saad Malik — Independent Web Developer</p>
-</div>
-<!-- Editorial Monolithic Typography -->
-<h1 class="font-display-xl-mobile text-display-xl-mobile uppercase text-primary leading-none tracking-tight mb-8">
-      The Web<br/>
-<span class="italic font-display-xl-mobile text-secondary-fixed-dim">Is My</span><br/>
-      Canvas<span class="text-primary-container">.</span>
-</h1>
-<!-- Tactile Atmospheric Portrait Strip -->
-<div class="relative w-full h-44 mb-8 bg-surface-container-low overflow-hidden">
-<img class="w-full h-full object-cover grayscale contrast-125 opacity-80" alt="A dark, minimal web development workspace with a code editor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KOvruykO2oSBRXdPLTlcMkKJ5tg3ymAbIddOwSJvzPnTDjCsjzQ9JyOHfpl9umiZMkQSFnRtJfinYHXbn-ZI4e6HJZgvdgd-l-0zMZoDNXz1sys_8qO_-Fl6DaNvxo2lfOa2hopme4KyIoDRxuMB0L5YsCe4pkzT-1CoMZ75cnIJROAJbApeTTZRpL1HLJ0dFiASZlb-58RJnDoFopT5sgdEHoh1EXMBmOGVwlg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
-<div class="absolute bottom-3 left-3 flex items-center gap-2 px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-md">
-<span class="font-label-code text-label-code text-primary-container">SYS::STABLE</span>
+  <section id="work">
+    <div class="wrap">
+      <p class="eyebrow" data-r>Portfolio</p>
+      <h2 class="h" data-r>Selected work</h2>
+      <p class="lead" data-r>Client projects are coming soon. These are concept builds that show my style.</p>
+      <div class="chips" data-r>
+        <button class="chip on" data-f="all" data-mag>All</button>
+        <button class="chip" data-f="landing" data-mag>Landing pages</button>
+        <button class="chip" data-f="app" data-mag>Web apps</button>
+        <button class="chip" data-f="anim" data-mag>Animations</button>
+      </div>
+      <!-- EDIT: replace these concept rows with real projects. Keep data-cat (landing / app / anim). Set href to your live link. -->
+      <div class="list" data-r>
+        <a class="row" href="#contact" data-cat="landing" data-color="#E5252A" data-fg="#0C0809" data-title="SaaS landing page"><span class="num">01</span><span class="rt">SaaS landing page</span><span class="arr">↗</span><span class="rtag">Landing page · Concept</span></a>
+        <a class="row" href="#contact" data-cat="app" data-color="#FFB020" data-fg="#0C0809" data-title="Analytics dashboard"><span class="num">02</span><span class="rt">Analytics dashboard</span><span class="arr">↗</span><span class="rtag">Web app · Concept</span></a>
+        <a class="row" href="#contact" data-cat="anim" data-color="#F6F1EA" data-fg="#0C0809" data-title="Scroll story site"><span class="num">03</span><span class="rt">Scroll story site</span><span class="arr">↗</span><span class="rtag">Animation · Concept</span></a>
+        <a class="row" href="#contact" data-cat="landing" data-color="#7A1216" data-fg="#F6F1EA" data-title="Product showcase"><span class="num">04</span><span class="rt">Product showcase</span><span class="arr">↗</span><span class="rtag">Landing page · Concept</span></a>
+      </div>
+      <p class="note" data-r>Want your project here? <a href="#contact" class="red">Let's talk.</a></p>
+    </div>
+  </section>
 
-</div>
-</div>
-<!-- Primary Quick Actions -->
-<div class="flex flex-col gap-3">
-<a class="w-full h-12 flex items-center justify-between px-5 bg-primary text-on-primary hover:bg-primary-container transition-colors duration-150" href="#services-ledger">
-<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Explore Services</span>
-<span class="font-label-code text-label-code text-on-primary font-bold">[06 ITEMS ↓]</span>
-</a>
-<a class="w-full h-12 flex items-center justify-between px-5 bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors duration-150" href="https://wa.me/923220447919" rel="noopener noreferrer" target="_blank">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px] text-primary-container">chat</span>
-<span class="font-label-caps text-label-caps uppercase tracking-wider">Let's Talk (WhatsApp)</span>
-</div>
-<span class="font-label-code text-label-code text-primary-container">[+92 322]</span>
-</a>
-</div>
-</section>
-<!-- SECTION 2: ABOUT -->
-<section class="flex flex-col py-10 bg-surface-container-low px-4 -mx-gutter-sm scroll-mt-24" id="about">
-<div class="flex items-center justify-between mb-4">
-<span class="font-label-code text-label-code text-primary-container">[01 // MANIFESTO]</span>
-<span class="font-label-caps text-label-caps uppercase text-outline">ORIGIN: PAKISTAN</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-5 leading-snug">
-      Turning ideas into <span class="italic text-secondary">meaningful</span> digital experiences.
-    </h2>
-<div class="space-y-4 text-on-surface-variant font-body-md text-body-md mb-8">
-<p>
-        I am Saad Malik, an intermediate web developer based in Pakistan, practicing code as an exacting architectural trade. I design and build fast, responsive, and structurally sound interfaces that respect user attention and business objectives.
-      </p>
-<p>
-        Rejecting unnecessary visual clutter and sluggish framework overhead, my focus centers on crisp typography, semantic purity, and silky mobile touch behavior.
-      </p>
-</div>
-<!-- 3 Ethos Chips -->
-<div class="flex flex-col gap-2">
-<div class="flex items-center justify-between p-3.5 bg-surface-container">
-<div class="flex items-center gap-3">
-<span class="font-label-code text-label-code text-primary-container">01</span>
-<span class="font-headline-md text-body-md text-primary font-medium">Simplicity</span>
-</div>
-<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Zero Bloat</span>
-</div>
-<div class="flex items-center justify-between p-3.5 bg-surface-container">
-<div class="flex items-center gap-3">
-<span class="font-label-code text-label-code text-primary-container">02</span>
-<span class="font-headline-md text-body-md text-primary font-medium">Semantic Rigor</span>
-</div>
-<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Clean Standards</span>
-</div>
-<div class="flex items-center justify-between p-3.5 bg-surface-container">
-<div class="flex items-center gap-3">
-<span class="font-label-code text-label-code text-primary-container">03</span>
-<span class="font-headline-md text-body-md text-primary font-medium">Performance</span>
-</div>
-<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Performance-minded</span>
-</div>
-</div>
-</section>
-<!-- SECTION 3: SERVICES (Vertical Ledger) -->
-<section class="flex flex-col py-12 scroll-mt-20" id="services-ledger">
-<div class="flex items-baseline justify-between mb-8">
-<div>
-<span class="font-label-code text-label-code text-primary-container block mb-1">[02 // CAPABILITIES]</span>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Services</h2>
-</div>
-<span class="font-label-code text-label-code text-outline">[TOTAL: 06]</span>
-</div>
-<!-- Vertical Ledger Items with Hairline Dividers -->
-<div class="flex flex-col">
-<!-- 01 -->
-<div class="py-5 bg-surface hover:bg-surface-container-low transition-colors duration-150">
-<div class="flex items-start justify-between mb-2">
-<span class="font-label-code text-label-code text-primary-container">[01]</span>
-<span class="font-label-caps text-label-caps text-outline uppercase">BESPOKE SYSTEM</span>
-</div>
-<h3 class="font-headline-md text-body-lg text-primary font-medium mb-1">Custom Website Development</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Built from the ground up to match your brand specifications without template constraints.</p>
-</div>
-<div class="h-px w-full bg-outline-variant/40"></div>
-<!-- 02 -->
-<div class="py-5 bg-surface hover:bg-surface-container-low transition-colors duration-150">
-<div class="flex items-start justify-between mb-2">
-<span class="font-label-code text-label-code text-primary-container">[02]</span>
-<span class="font-label-caps text-label-caps text-outline uppercase">INTERACTION UI</span>
-</div>
-<h3 class="font-headline-md text-body-lg text-primary font-medium mb-1">Frontend Development</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Pixel-perfect component architecture, clean DOM structures, and fluid micro-interactions.</p>
-</div>
-<div class="h-px w-full bg-outline-variant/40"></div>
-<!-- 03 -->
-<div class="py-5 bg-surface hover:bg-surface-container-low transition-colors duration-150">
-<div class="flex items-start justify-between mb-2">
-<span class="font-label-code text-label-code text-primary-container">[03]</span>
-<span class="font-label-caps text-label-caps text-outline uppercase">COMMERCIAL</span>
-</div>
-<h3 class="font-headline-md text-body-lg text-primary font-medium mb-1">Business Websites</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Authoritative, conversion-focused presences designed to position corporate credibility clearly.</p>
-</div>
-<div class="h-px w-full bg-outline-variant/40"></div>
-<!-- 04 -->
-<div class="py-5 bg-surface hover:bg-surface-container-low transition-colors duration-150">
-<div class="flex items-start justify-between mb-2">
-<span class="font-label-code text-label-code text-primary-container">[04]</span>
-<span class="font-label-caps text-label-caps text-outline uppercase">TRANSACTIONAL</span>
-</div>
-<h3 class="font-headline-md text-body-lg text-primary font-medium mb-1">E-commerce Websites</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Streamlined shopping journeys, frictionless product displays, and snappy checkout funnels.</p>
-</div>
-<div class="h-px w-full bg-outline-variant/40"></div>
-<!-- 05 -->
-<div class="py-5 bg-surface hover:bg-surface-container-low transition-colors duration-150">
-<div class="flex items-start justify-between mb-2">
-<span class="font-label-code text-label-code text-primary-container">[05]</span>
-<span class="font-label-caps text-label-caps text-outline uppercase">RESTRUCTURE</span>
-</div>
-<h3 class="font-headline-md text-body-lg text-primary font-medium mb-1">Website Redesign</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Transform outdated or sluggish legacy pages into high-velocity modern web artifacts.</p>
-</div>
-<div class="h-px w-full bg-outline-variant/40"></div>
-<!-- 06 -->
-<div class="py-5 bg-surface hover:bg-surface-container-low transition-colors duration-150">
-<div class="flex items-start justify-between mb-2">
-<span class="font-label-code text-label-code text-primary-container">[06]</span>
-<span class="font-label-caps text-label-caps text-outline uppercase">VIEWPORT ADAPTIVE</span>
-</div>
-<h3 class="font-headline-md text-body-lg text-primary font-medium mb-1">Responsive Web Design</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Seamless fluid behavior calibrated across ultra-wide monitors down to compact 375px screens.</p>
-</div>
-<div class="h-px w-full bg-outline-variant/40"></div>
-</div>
-</section>
-<!-- SECTION 4: SKILLS & TOOLS -->
-<section class="flex flex-col py-10 bg-surface-container-low px-4 -mx-gutter-sm scroll-mt-24" id="skills">
-<div class="flex items-center justify-between mb-6">
-<span class="font-label-code text-label-code text-primary-container">[03 // ARSENAL]</span>
-<span class="font-label-caps text-label-caps uppercase text-outline">STACK &amp; ENVIRONMENT</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-6">Skills &amp; Tools</h2>
-<!-- Core Languages & Frameworks -->
-<div class="mb-6">
-<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block mb-3">Core Stack</span>
-<div class="grid grid-cols-2 gap-2">
-<div class="p-3.5 bg-surface-container flex flex-col justify-between">
-<span class="font-label-code text-label-code text-primary-container mb-2">01 // MARKUP</span>
-<span class="font-headline-md text-body-lg text-primary font-semibold">HTML5</span>
-<span class="font-label-caps text-label-caps text-outline mt-1 uppercase">Semantic &amp; A11y</span>
-</div>
-<div class="p-3.5 bg-surface-container flex flex-col justify-between">
-<span class="font-label-code text-label-code text-primary-container mb-2">02 // STYLES</span>
-<span class="font-headline-md text-body-lg text-primary font-semibold">CSS3</span>
-<span class="font-label-caps text-label-caps text-outline mt-1 uppercase">Modern Flex/Grid</span>
-</div>
-<div class="p-3.5 bg-surface-container flex flex-col justify-between">
-<span class="font-label-code text-label-code text-primary-container mb-2">03 // SCRIPT</span>
-<span class="font-headline-md text-body-lg text-primary font-semibold">JavaScript</span>
-<span class="font-label-caps text-label-caps text-outline mt-1 uppercase">ES6+ Modular</span>
-</div>
-<div class="p-3.5 bg-surface-container flex flex-col justify-between">
-<span class="font-label-code text-label-code text-primary-container mb-2">04 // LIB</span>
-<span class="font-headline-md text-body-lg text-primary font-semibold">React</span>
-<span class="font-label-caps text-label-caps text-outline mt-1 uppercase">Components &amp; Hooks</span>
-</div>
-</div>
-</div>
-<!-- Development Tools -->
-<div>
-<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block mb-3">Development Tools</span>
-<div class="flex flex-col gap-2">
-<div class="flex items-center justify-between p-3.5 bg-surface-container">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-[18px] text-primary-container">terminal</span>
-<span class="font-headline-md text-body-md text-primary font-medium">VS Code</span>
-</div>
-<span class="font-label-code text-label-code text-outline">[PRIMARY IDE]</span>
-</div>
-<div class="flex items-center justify-between p-3.5 bg-surface-container">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-[18px] text-primary-container">source</span>
-<span class="font-headline-md text-body-md text-primary font-medium">GitHub</span>
-</div>
-<span class="font-label-code text-label-code text-outline">[VERSION CONTROL]</span>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION 5: 4-STEP PROCESS -->
-<section class="flex flex-col py-12 scroll-mt-24" id="process">
-<div class="flex items-baseline justify-between mb-8">
-<div>
-<span class="font-label-code text-label-code text-primary-container block mb-1">[04 // METHODOLOGY]</span>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Process</h2>
-</div>
-<span class="font-label-code text-label-code text-outline">[4 STAGES]</span>
-</div>
-<div class="flex flex-col space-y-6 relative">
-<!-- Hairline Progress Spine -->
-<div class="absolute left-3.5 top-3 bottom-3 w-px bg-outline-variant/50"></div>
-<!-- Step 01 -->
-<div class="flex items-start gap-4 relative z-10">
-<div class="w-7 h-7 bg-surface-container-high text-primary-container flex items-center justify-center font-label-code text-label-code shrink-0 shadow-sm">
-          01
-        </div>
-<div class="flex-1 pt-0.5">
-<div class="flex items-baseline justify-between mb-1">
-<h3 class="font-headline-md text-body-lg text-primary font-medium">Discover</h3>
-<span class="font-label-caps text-label-caps text-outline uppercase">Alignment</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Uncovering core project goals, audience context, and functional specifications through direct conversation.</p>
-</div>
-</div>
-<!-- Step 02 -->
-<div class="flex items-start gap-4 relative z-10">
-<div class="w-7 h-7 bg-surface-container-high text-primary-container flex items-center justify-center font-label-code text-label-code shrink-0 shadow-sm">
-          02
-        </div>
-<div class="flex-1 pt-0.5">
-<div class="flex items-baseline justify-between mb-1">
-<h3 class="font-headline-md text-body-lg text-primary font-medium">Plan</h3>
-<span class="font-label-caps text-label-caps text-outline uppercase">Architecture</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Structuring clean layouts, typographic hierarchy, component modules, and lightweight data flows.</p>
-</div>
-</div>
-<!-- Step 03 -->
-<div class="flex items-start gap-4 relative z-10">
-<div class="w-7 h-7 bg-surface-container-high text-primary-container flex items-center justify-center font-label-code text-label-code shrink-0 shadow-sm">
-          03
-        </div>
-<div class="flex-1 pt-0.5">
-<div class="flex items-baseline justify-between mb-1">
-<h3 class="font-headline-md text-body-lg text-primary font-medium">Develop</h3>
-<span class="font-label-caps text-label-caps text-outline uppercase">Implementation</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Writing clean, responsive code tested continuously across multiple mobile viewports and browsers.</p>
-</div>
-</div>
-<!-- Step 04 -->
-<div class="flex items-start gap-4 relative z-10">
-<div class="w-7 h-7 bg-primary-container text-on-primary font-bold flex items-center justify-center font-label-code text-label-code shrink-0 shadow-sm">
-          04
-        </div>
-<div class="flex-1 pt-0.5">
-<div class="flex items-baseline justify-between mb-1">
-<h3 class="font-headline-md text-body-lg text-primary font-medium">Deliver</h3>
-<span class="font-label-caps text-label-caps text-primary-container uppercase">Handover</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Deploying cleanly, optimizing core web vitals, and providing clear instructions for seamless management.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION 6: CONTACT & REACHOUT -->
-<section class="flex flex-col py-10 bg-surface-container-low px-4 -mx-gutter-sm mb-4 scroll-mt-24" id="contact">
-<div class="flex items-center justify-between mb-3">
-<span class="font-label-code text-label-code text-primary-container">[05 // REACHOUT]</span>
-<span class="font-label-caps text-label-caps text-outline uppercase">OPEN FOR INQUIRIES</span>
-</div>
-<h2 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-3">
-      Have an idea?<br/>
-<span class="italic text-secondary">Let's make it happen.</span>
-</h2>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
-      Whether you need an entire bespoke website, a sleek redesign, or focused frontend work, drop a line directly.
-    </p>
-<!-- Quick Direct Reachout Touch Targets -->
-<div class="flex flex-col gap-2.5 mb-8">
-<a class="flex items-center justify-between p-4 bg-surface-container hover:bg-surface-container-high transition-colors" href="https://wa.me/923220447919" rel="noopener noreferrer" target="_blank">
-<div class="flex items-center gap-3">
-<span class="w-8 h-8 rounded-full bg-primary-container/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-[18px] text-primary-container">phone_in_talk</span>
-</span>
-<div class="flex flex-col">
-<span class="font-label-caps text-label-caps uppercase text-outline">WhatsApp Direct</span>
-<span class="font-label-code text-label-code text-primary font-medium">+92 322 0447919</span>
-</div>
-</div>
-<span class="font-label-code text-label-code text-primary-container">[-&gt;]</span>
-</a>
-<a class="flex items-center justify-between p-4 bg-surface-container hover:bg-surface-container-high transition-colors" href="mailto:saadiimalik732@gmail.com">
-<div class="flex items-center gap-3">
-<span class="w-8 h-8 rounded-full bg-primary-container/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-[18px] text-primary-container">mail</span>
-</span>
-<div class="flex flex-col">
-<span class="font-label-caps text-label-caps uppercase text-outline">Electronic Mail</span>
-<span class="font-label-code text-label-code text-primary font-medium">saadiimalik732@gmail.com</span>
-</div>
-</div>
-<span class="font-label-code text-label-code text-primary-container">[-&gt;]</span>
-</a>
-</div>
-<!-- Direct Mobile Inquiry Form -->
-<div class="bg-surface-container p-5">
-<div class="flex items-center justify-between mb-4">
-<span class="font-label-caps text-label-caps uppercase text-primary font-medium">Quick Inquiry Form</span>
-<span class="font-label-code text-label-code text-primary-container">TERMINAL_SEND</span>
-</div>
-<form class="flex flex-col gap-4" id="portfolio-contact-form">
-<div>
-<label class="block font-label-code text-label-code text-outline mb-1.5 uppercase">01 // Your Name</label>
-<input class="w-full bg-surface-container-lowest text-on-surface px-3 py-2.5 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container placeholder:text-outline/50" placeholder="e.g. Elena Rostova" required="" type="text" id="contact-name" name="name"/>
-</div>
-<div>
-<label class="block font-label-code text-label-code text-outline mb-1.5 uppercase">02 // Your Email</label>
-<input class="w-full bg-surface-container-lowest text-on-surface px-3 py-2.5 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container placeholder:text-outline/50" placeholder="name@domain.com" required="" type="email" id="contact-email" name="email"/>
-</div>
-<div>
-<label class="block font-label-code text-label-code text-outline mb-1.5 uppercase">03 // Service Required</label>
-<select id="contact-service" name="service" class="w-full bg-surface-container-lowest text-on-surface px-3 py-2.5 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container">
-<option>Custom Website Development</option>
-<option>Frontend Development</option>
-<option>Business Websites</option>
-<option>E-commerce Websites</option>
-<option>Website Redesign</option>
-<option>Responsive Web Design</option>
-</select>
-</div>
-<div>
-<label class="block font-label-code text-label-code text-outline mb-1.5 uppercase">04 // Project Scope</label>
-<textarea id="contact-message" name="message" class="w-full bg-surface-container-lowest text-on-surface px-3 py-2.5 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container placeholder:text-outline/50" placeholder="Briefly describe what you are looking to build..." required="" rows="3"></textarea>
-</div>
-<button class="w-full h-12 mt-1 flex items-center justify-center gap-2 bg-primary text-on-primary hover:bg-primary-container transition-colors duration-150 active:scale-[0.99]" id="form-submit-btn" type="submit">
-<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Transmit Inquiry</span>
-<span class="font-label-code text-label-code text-on-primary font-bold">[SEND]</span>
-</button>
-<div class="hidden text-center py-2 font-label-code text-label-code text-primary-container" id="form-feedback">
-          Your email app will open with your inquiry ready to send.
-        </div>
-</form>
-</div>
-<!-- Reassurance Footer Note -->
-<div class="mt-6 flex items-center justify-center gap-2 text-outline">
-<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
-<span class="font-label-caps text-label-caps uppercase tracking-wider">Usually replies as soon as possible</span>
-</div>
-</section>
-<!-- Editorial Colophon Micro-Footer -->
-<div class="flex flex-col items-center justify-center text-center py-6 gap-1 text-outline">
-<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">SAAD MALIK © 2026</span>
-<span class="font-label-code text-label-code text-outline">CRAFTED WITH PRECISION // PAKISTAN</span>
-</div>
-</div>
+  <div class="stack" data-r><div>
+    <span>HTML ✦</span><span>CSS ✦</span><span>JavaScript ✦</span><span>React ✦</span><span>Next.js ✦</span><span>Tailwind ✦</span><span>GSAP ✦</span><span>Git ✦</span>
+    <span>HTML ✦</span><span>CSS ✦</span><span>JavaScript ✦</span><span>React ✦</span><span>Next.js ✦</span><span>Tailwind ✦</span><span>GSAP ✦</span><span>Git ✦</span>
+  </div></div>
+
+  <section id="process">
+    <div class="wrap">
+      <p class="eyebrow" data-r>Process</p>
+      <h2 class="h" data-r>How we'll work</h2>
+      <div class="cards">
+        <div class="card" data-tilt data-r><span class="n">01</span><h3 class="h">Talk</h3><p>Tell me your goal. I reply within 24 hours with a clear plan.</p></div>
+        <div class="card" data-tilt data-r><span class="n">02</span><h3 class="h">Build</h3><p>Design and code with smooth animations, previewed as we go.</p></div>
+        <div class="card" data-tilt data-r><span class="n">03</span><h3 class="h">Launch</h3><p>Go live fast, then enjoy 30 days of free fixes.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="eyebrow" style="color:#FFD9D6" data-r>Let's work together</p>
+      <h2 class="h" data-r>Got an idea?<br>Let's make it<br>loud.</h2>
+      <p data-r>Email me and I'll reply within 24 hours.</p>
+      <a href="mailto:saadiimalik732@gmail.com" class="say h" data-mag>Say hi ↗</a>
+      <div class="cbtns">
+        <a class="btn" href="mailto:saadiimalik732@gmail.com" data-mag>saadiimalik732@gmail.com</a>
+        <button class="btn" id="copy" data-mag>Copy email</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Saad Malik · Web Developer</footer>
+
+<div class="pill" id="pill"><span><i class="dotg"></i>Available now</span><a href="mailto:saadiimalik732@gmail.com" data-mag>Let's talk</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
 <script>
-  (function () {
-    const form = document.getElementById('portfolio-contact-form');
-    const feedback = document.getElementById('form-feedback');
+(function(){
+  var root=document.documentElement;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+  var pre=document.getElementById('pre');
 
-    if (!form) return;
-
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      const name = document.getElementById('contact-name')?.value.trim() || '';
-      const email = document.getElementById('contact-email')?.value.trim() || '';
-      const service = document.getElementById('contact-service')?.value || '';
-      const message = document.getElementById('contact-message')?.value.trim() || '';
-
-      if (!name || !email || !message) {
-        form.reportValidity();
-        return;
-      }
-
-      const subject = encodeURIComponent('Portfolio inquiry: ' + service);
-      const body = encodeURIComponent(
-        'Name: ' + name + '\\n' +
-        'Email: ' + email + '\\n' +
-        'Service: ' + service + '\\n\\n' +
-        'Project details:\\n' + message
-      );
-
-      // Opens the visitor's configured email app; no false success is shown.
-      window.location.href = 'mailto:saadiimalik732@gmail.com?subject=' + subject + '&body=' + body;
-
-      if (feedback) {
-        feedback.textContent = 'Your email app will open with your inquiry ready to send. If it does not, contact me directly by WhatsApp.';
-        feedback.classList.remove('hidden');
-      }
-    });
-  })();
-</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.25)]" data-active-classes="text-primary-container"><div class="h-16 px-gutter-sm flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs transition-colors group text-primary-container" data-path="index" href="#home"><span class="font-label-caps text-label-caps uppercase tracking-wider group-hover:text-primary">01 // Index</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs text-secondary hover:text-primary transition-colors group" data-path="about" href="#about"><span class="font-label-caps text-label-caps uppercase tracking-wider group-hover:text-primary">02 // About</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs text-secondary hover:text-primary transition-colors group" data-path="services" href="#services-ledger"><span class="font-label-caps text-label-caps uppercase tracking-wider group-hover:text-primary">03 // Services</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs text-secondary hover:text-primary transition-colors group" data-path="contact" href="#contact"><span class="font-label-caps text-label-caps uppercase tracking-wider group-hover:text-primary">04 // Contact</span></a></div></nav>
-<script id="saad-motion-engine">
-(function () {
-  const reduceMotion = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduceMotion) return;
-
-  const addReveal = (selector, motion) => {
-    document.querySelectorAll(selector).forEach((element) => {
-      element.classList.add('motion-reveal');
-      if (motion) element.dataset.motion = motion;
-    });
-  };
-
-  addReveal('#about > div:first-child', 'left');
-  addReveal('#about h2');
-  addReveal('#about > div.space-y-4');
-  addReveal('#about > div.flex.flex-col.gap-2', 'scale');
-  addReveal('#services-ledger > div:first-child', 'left');
-  addReveal('#skills > div:first-child', 'left');
-  addReveal('#skills h2');
-  addReveal('#skills > div.mb-6');
-  addReveal('#skills > div:not(:first-child)');
-  addReveal('#process > div:first-child', 'left');
-  addReveal('#contact > div:first-child', 'left');
-  addReveal('#contact h2');
-  addReveal('#contact > p');
-  addReveal('#contact > div.flex.flex-col.gap-2\\.5');
-  addReveal('#contact > div.bg-surface-container', 'scale');
-  addReveal('#contact > div.mt-6');
-
-  document.querySelectorAll('#services-ledger .py-5').forEach(el => el.classList.add('motion-card'));
-  document.querySelectorAll('#skills .grid > div').forEach(el => el.classList.add('motion-card'));
-  document.querySelectorAll('#process .flex.items-start.gap-4').forEach(el => el.classList.add('motion-step'));
-
-  const staggerGroups = [
-    '#about > div.flex.flex-col.gap-2',
-    '#skills .grid',
-    '#process > div.flex.flex-col.space-y-6'
-  ];
-  staggerGroups.forEach(selector => {
-    document.querySelectorAll(selector).forEach(el => el.classList.add('motion-stagger'));
+  var copyBtn=document.getElementById('copy');
+  var toast=document.getElementById('toast');
+  copyBtn.addEventListener('click',function(){
+    var done=function(){toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},1800)};
+    if(navigator.clipboard){navigator.clipboard.writeText('saadiimalik732@gmail.com').then(done)}else{done()}
   });
 
-  const revealElements = document.querySelectorAll('.motion-reveal, .motion-stagger');
-  if (!('IntersectionObserver' in window)) {
-    revealElements.forEach(el => el.classList.add('is-visible'));
+  if(!window.gsap||!window.ScrollTrigger||reduce){
+    root.classList.remove('js');
+    if(pre)pre.remove();
     return;
   }
+  gsap.registerPlugin(ScrollTrigger);
 
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        obs.unobserve(entry.target);
-      }
+  var lenis=null,vel=0;
+  if(window.Lenis){
+    lenis=new Lenis({lerp:.1});
+    lenis.on('scroll',function(e){vel=e.velocity;ScrollTrigger.update()});
+    gsap.ticker.add(function(t){lenis.raf(t*1000)});
+    gsap.ticker.lagSmoothing(0);
+    lenis.stop();
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href');
+      var t=id.length>1?document.querySelector(id):null;
+      if(!t)return;
+      e.preventDefault();
+      if(lenis){lenis.scrollTo(t,{offset:-10})}else{t.scrollIntoView({behavior:'smooth'})}
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  });
 
-  revealElements.forEach(el => observer.observe(el));
+  gsap.set('h1 .ln>span',{yPercent:110});
+  gsap.set(['.pillt','.sub','.cta','.mail','.nav'],{opacity:0,y:24});
+
+  function intro(){
+    gsap.to('h1 .ln>span',{yPercent:0,duration:1.1,stagger:.12,ease:'power4.out'});
+    gsap.to(['.nav','.pillt','.sub','.cta','.mail'],{opacity:1,y:0,duration:.9,stagger:.1,delay:.3,ease:'power3.out'});
+  }
+
+  var cnt=document.getElementById('cnt');
+  var st={v:0};
+  gsap.timeline()
+    .to(st,{v:100,duration:1.5,ease:'power2.inOut',onUpdate:function(){cnt.textContent=Math.round(st.v)}})
+    .to(pre,{yPercent:-100,duration:.9,ease:'power4.inOut'},'+=.15')
+    .add(function(){pre.remove();if(lenis)lenis.start();})
+    .add(intro,'-=0.55');
+
+  gsap.utils.toArray('[data-r]').forEach(function(el){
+    gsap.from(el,{y:40,opacity:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 90%',once:true}});
+  });
+
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var end=+el.dataset.count,o={v:0};
+    el.textContent='0';
+    ScrollTrigger.create({trigger:el,start:'top 92%',once:true,onEnter:function(){
+      gsap.to(o,{v:end,duration:1.6,ease:'power2.out',onUpdate:function(){el.textContent=Math.round(o.v)}});
+    }});
+  });
+
+  gsap.to('#bar',{scaleX:1,ease:'none',scrollTrigger:{start:0,end:'max',scrub:.2}});
+
+  var mq=document.getElementById('mq'),mx=0;
+  gsap.ticker.add(function(){
+    var half=mq.scrollWidth/2;
+    mx-=0.7+Math.min(Math.abs(vel)*0.35,10);
+    if(-mx>=half)mx+=half;
+    mq.style.transform='translate3d('+mx+'px,0,0)';
+  });
+
+  var hero=document.getElementById('heroSec');
+  hero.addEventListener('mousemove',function(e){
+    var r=hero.getBoundingClientRect();
+    hero.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    hero.style.setProperty('--my',(e.clientY-r.top)+'px');
+  });
+
+  var rows=[].slice.call(document.querySelectorAll('.row'));
+  var chips=[].slice.call(document.querySelectorAll('.chip'));
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      var f=c.dataset.f,n=0,vis=[];
+      chips.forEach(function(x){x.classList.toggle('on',x===c)});
+      rows.forEach(function(r){
+        var ok=f==='all'||r.dataset.cat===f;
+        r.classList.toggle('hide',!ok);
+        if(ok){n++;r.querySelector('.num').textContent=(n<10?'0':'')+n;vis.push(r)}
+      });
+      gsap.fromTo(vis,{opacity:0,y:24},{opacity:1,y:0,duration:.5,stagger:.07,ease:'power3.out'});
+      ScrollTrigger.refresh();
+    });
+  });
+
+  var pill=document.getElementById('pill');
+  ScrollTrigger.create({trigger:'#work',start:'top 70%',onEnter:function(){pill.classList.add('show')},onLeaveBack:function(){pill.classList.remove('show')}});
+
+  if(fine){
+    root.classList.add('cursor-on');
+    var dot=document.getElementById('dot'),ring=document.getElementById('ring');
+    var dx=gsap.quickTo(dot,'x',{duration:.05}),dy=gsap.quickTo(dot,'y',{duration:.05});
+    var rx=gsap.quickTo(ring,'x',{duration:.35,ease:'power3'}),ry=gsap.quickTo(ring,'y',{duration:.35,ease:'power3'});
+    var peek=document.getElementById('peek'),pkt=document.getElementById('pkt');
+    gsap.set(peek,{xPercent:-50,yPercent:-120,scale:.8,opacity:0});
+    var px=gsap.quickTo(peek,'x',{duration:.4,ease:'power3'}),py=gsap.quickTo(peek,'y',{duration:.4,ease:'power3'});
+    addEventListener('mousemove',function(e){dx(e.clientX);dy(e.clientY);rx(e.clientX);ry(e.clientY);px(e.clientX);py(e.clientY)});
+    document.addEventListener('mouseover',function(e){
+      ring.classList.toggle('big',!!(e.target.closest&&e.target.closest('a,button,[data-mag]')));
+    });
+    rows.forEach(function(r){
+      r.addEventListener('mouseenter',function(){
+        peek.style.background=r.dataset.color;
+        peek.style.color=r.dataset.fg;
+        pkt.textContent=r.dataset.title;
+        gsap.to(peek,{opacity:1,scale:1,duration:.3,ease:'power3.out'});
+      });
+      r.addEventListener('mouseleave',function(){gsap.to(peek,{opacity:0,scale:.8,duration:.25})});
+    });
+    document.querySelectorAll('[data-mag]').forEach(function(el){
+      el.addEventListener('mousemove',function(e){
+        var b=el.getBoundingClientRect();
+        gsap.to(el,{x:(e.clientX-b.left-b.width/2)*.3,y:(e.clientY-b.top-b.height/2)*.3,duration:.4,ease:'power3.out'});
+      });
+      el.addEventListener('mouseleave',function(){gsap.to(el,{x:0,y:0,duration:.8,ease:'elastic.out(1,.4)'})});
+    });
+    document.querySelectorAll('[data-tilt]').forEach(function(c){
+      c.addEventListener('mousemove',function(e){
+        var b=c.getBoundingClientRect();
+        var x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;
+        gsap.to(c,{rotationY:x*10,rotationX:-y*10,transformPerspective:800,duration:.4,ease:'power2.out'});
+      });
+      c.addEventListener('mouseleave',function(){gsap.to(c,{rotationX:0,rotationY:0,duration:.7,ease:'power3.out'})});
+    });
+  }
 })();
 </script>
-
-</body></html>
+</body>
+</html>
