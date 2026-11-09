@@ -27,8 +27,8 @@ const SITE_DATA = {
        email:     "name@example.com"
        instagram: "your_username"      (no @ and no URL)            */
   contact: {
-    email: "",
-    instagram: ""
+    email: "saadiimalik732@gmail.com",
+    instagram: "itssaad.dev"
   },
 
   /* ---------- CURRENTLY EXPLORING ----------
